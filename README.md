@@ -1,11 +1,13 @@
 # Table creation from SQL for hive
 
 ```
-python main.py -t EXTERNAL -c 50 -p 5 -f orc -e iceberg
+python main.py -t external -n main_tbl -c 10 -p 1 -f orc -e iceberg -r 10
 ```
 
--t -> table type
--c -> number of columns
--p -> number of partition columns
--f -> Stored As
--e -> Stored By
+-t -> table type\
+-n -> table name\
+-c -> number of columns\
+-p -> number of partition columns\
+-e -> Stored By\
+-f -> Stored As\
+-r -> rows
